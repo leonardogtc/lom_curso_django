@@ -21,4 +21,4 @@ def sobre(request):
 
 
 def contato(request):
-    return HttpResponse("Contato")
+    return render(request, 'revenues/contato.html')
