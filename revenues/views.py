@@ -7,7 +7,11 @@ from django.http import HttpResponse
 
 def home(request):
     # return HttpResponse("Home")
-    return render(request, 'revenues/home.html')
+    return render(request, 'revenues/home.html', context={
+        'nome':'Leonardo',
+        'nascimento':'25 de maio de 1971',
+        'idade': 54
+    })
 
 
 
